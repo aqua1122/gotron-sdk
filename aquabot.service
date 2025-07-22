@@ -1,0 +1,60 @@
+# 메인 실행 (환경변수 로드 + 봇 실행)
+ExecStart=/bin/bash -c 'set -a; source /home/minho/epusdt_new/.env; set +a; cd /home/minho/epusdt_new && ./epusdt_bot'
+
+# 재시작 설정
+Restart=always
+RestartSec=5
+StartLimitBurst=10
+StartLimitInterval=60s
+
+# 리소스 제한
+LimitNOFILE=65536
+LimitNPROC=4096
+MemoryMax=512M
+CPUQuota=50%
+
+# 보안 설정
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/home/minho/epusdt_new /tmp
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictRealtime=true
+RestrictSUIDSGID=true
+
+# 로그 설정
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=aquabot
+
+# 환경변수
+Environment=GIN_MODE=release
+Environment=GO_ENV=production
+
+# 실패 시 알림 (선택사항)
+# ExecStopPost=/bin/bash -c 'if [ $EXIT_CODE -ne 0 ]; then echo "🚨 AQUA 봇이 비정상 종료되었습니다. (코드: $EXIT_CODE)" | wall; fi'
+
+[Install]
+WantedBy=multi-user.target
+
+# 추가 섹션들
+[Service]
+# 타임아웃 설정
+TimeoutStartSec=30s
+TimeoutStopSec=10s
+
+# 프로세스 그룹 관리
+KillMode=mixed
+KillSignal=SIGTERM
+SendSIGKILL=yes
+SendSIGHUP=yes
+
+# 작업 디렉토리 보호
+ReadWritePaths=/home/minho/epusdt_new
+ReadOnlyPaths=/
+ReadOnlyPaths=/usr
+ReadOnlyPaths=/boot
+ReadOnlyPaths=/etc

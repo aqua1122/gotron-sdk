@@ -1,0 +1,19 @@
+2025/06/30 11:52:04 main.go:2075: 🚀 EPUSDT 봇 시작 중...
+2025/06/30 11:52:04 main.go:2082: 🔍 로드된 토큰: 8083879103:AAFar4A5KwBvtMg2r3EJTs5MuZafFNVHOBA
+2025/06/30 11:52:04 main.go:424: ✅ DB 연결 성공
+2025/06/30 11:52:04 main.go:2086: ✅ DB 초기화 완료
+2025/06/30 11:52:04 main.go:434: 🤖 봇 시작됨: @AQUAbeta_bot
+2025/06/30 11:52:04 main.go:2090: ✅ 봇 초기화 완료
+2025/06/30 11:52:04 main.go:2097: ✅ 웹훅 설정: https://dcd9-216-144-233-244.ngrok-free.app/webhook
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /webhook                  --> main.handleWebhook (3 handlers)
+[GIN-debug] GET    /ping                     --> main.main.func1 (3 handlers)
+2025/06/30 11:52:04 main.go:2111: 🌐 서버를 9020 포트에서 시작합니다...
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9020

@@ -1,0 +1,33 @@
+run:
+  timeout: 5m
+
+linters:
+  enable:
+    - errcheck
+    - govet
+    - staticcheck
+    - gosimple
+    - unused
+    - deadcode
+    - ineffassign
+
+  disable:
+    - gocyclo
+    - dupl
+
+issues:
+  exclude-use-default: false
+  max-issues-per-linter: 0
+  max-same-issues: 0
+  exclude:
+    - "should replace loop with `append`"
+    - "Error return value of .* is not checked"
+    - "rand.Seed has been deprecated"
+    - "strings.Title has been deprecated"
+    - "rand.Read has been deprecated"
+
+output:
+  format: colored-line-number
+  sort-results: true
+
+issues-exit-code: 1
