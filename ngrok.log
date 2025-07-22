@@ -11801,3 +11801,23 @@ t=2025-07-22T09:49:20+0900 lvl=info msg=end pg=/api/tunnels id=3feb51e5769b393c 
 t=2025-07-22T09:50:01+0900 lvl=info msg=start pg=/api/tunnels id=414e7cf090d22f8a
 t=2025-07-22T09:50:01+0900 lvl=info msg=end pg=/api/tunnels id=414e7cf090d22f8a status=200 dur=2.539674ms
 t=2025-07-22T09:52:28+0900 lvl=info msg="update available" obj=updater
+t=2025-07-22T09:59:25+0900 lvl=info msg=start pg=/api/tunnels id=449e37f22f92cbf7
+t=2025-07-22T09:59:25+0900 lvl=info msg=end pg=/api/tunnels id=449e37f22f92cbf7 status=200 dur=1.990639ms
+t=2025-07-22T10:00:02+0900 lvl=info msg=start pg=/api/tunnels id=18cf5656efe430c1
+t=2025-07-22T10:00:02+0900 lvl=info msg=end pg=/api/tunnels id=18cf5656efe430c1 status=200 dur=2.425937ms
+t=2025-07-22T10:09:25+0900 lvl=info msg=start pg=/api/tunnels id=d91d24b2c2123842
+t=2025-07-22T10:09:25+0900 lvl=info msg=end pg=/api/tunnels id=d91d24b2c2123842 status=200 dur=1.409894ms
+t=2025-07-22T10:10:01+0900 lvl=info msg=start pg=/api/tunnels id=30b1f210cee66e1a
+t=2025-07-22T10:10:01+0900 lvl=info msg=end pg=/api/tunnels id=30b1f210cee66e1a status=200 dur=1.140579ms
+t=2025-07-22T10:19:27+0900 lvl=info msg=start pg=/api/tunnels id=c1283a398494085b
+t=2025-07-22T10:19:27+0900 lvl=info msg=end pg=/api/tunnels id=c1283a398494085b status=200 dur=1.965152ms
+t=2025-07-22T10:20:01+0900 lvl=info msg=start pg=/api/tunnels id=dae9380d9d809f58
+t=2025-07-22T10:20:01+0900 lvl=info msg=end pg=/api/tunnels id=dae9380d9d809f58 status=200 dur=2.452735ms
+t=2025-07-22T10:29:29+0900 lvl=info msg=start pg=/api/tunnels id=a2955dbb1743c5dd
+t=2025-07-22T10:29:29+0900 lvl=info msg=end pg=/api/tunnels id=a2955dbb1743c5dd status=200 dur=1.327183ms
+t=2025-07-22T10:30:01+0900 lvl=info msg=start pg=/api/tunnels id=80ead6453af629c4
+t=2025-07-22T10:30:01+0900 lvl=info msg=end pg=/api/tunnels id=80ead6453af629c4 status=200 dur=1.007408ms
+t=2025-07-22T10:39:35+0900 lvl=info msg=start pg=/api/tunnels id=f6a09bb2a12c8873
+t=2025-07-22T10:39:35+0900 lvl=info msg=end pg=/api/tunnels id=f6a09bb2a12c8873 status=200 dur=1.641646ms
+t=2025-07-22T10:40:01+0900 lvl=info msg=start pg=/api/tunnels id=87d1a6acc4ad3cf4
+t=2025-07-22T10:40:01+0900 lvl=info msg=end pg=/api/tunnels id=87d1a6acc4ad3cf4 status=200 dur=850.085µs
